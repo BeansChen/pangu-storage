@@ -55,7 +55,7 @@ export const deserialize = <T>(value: string): T => {
     }
 
     return parsed;
-  } catch (error) {
+  } catch {
     return value as T; // 返回原始字符串
   }
 };
