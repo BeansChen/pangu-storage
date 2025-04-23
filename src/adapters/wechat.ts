@@ -1,6 +1,5 @@
 import type { StorageAdapter } from '../types';
 
-declare const wx: any;
 export class WechatAdapter implements StorageAdapter {
   async getItem(key: string): Promise<string | null> {
     return new Promise((resolve) => {

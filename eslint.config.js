@@ -14,7 +14,9 @@ export default ([
       globals: {
         ...globals.browser, // 添加浏览器全局变量
         ...globals.node,    // 添加Node.js全局变量
-        localStorage: 'readonly' // 解决 localStorage 未定义问题
+        ...globals.jest,    // 添加Jest全局变量
+        wx: 'readonly', // 解决 wx 未定义问题
+        my: 'readonly' // 解决 my 未定义问题
       }
     },
     plugins: {

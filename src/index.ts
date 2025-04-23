@@ -3,9 +3,6 @@ import { WebStorageAdapter } from './adapters/web';
 import { WechatAdapter } from './adapters/wechat';
 import type { StorageConfig, StorageAPI, Platform } from './types';
 
-declare const wx: any;
-declare const my: any;
-
 export function createStorage(
   config?: StorageConfig & { platform?: Platform },
   useSessionStorage = false
